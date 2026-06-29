@@ -1,0 +1,23 @@
+# Local private assets and archived experiments
+/archive/
+/assets/
+/fig-template/
+/medium-professional-template.tex
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Keep anonymized preview PDFs tracked
+!medium-professional-research-cn.pdf
+!medium-professional-industry-cn.pdf

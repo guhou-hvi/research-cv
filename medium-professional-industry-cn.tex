@@ -1,0 +1,115 @@
+\documentclass[11pt]{resume}
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{hyperref}
+
+\defaultfontfeatures{Ligatures=TeX}
+\IfFontExistsTF{Noto Serif SC}{
+  \setmainfont[AutoFakeBold=2.2,AutoFakeSlant=0.18]{Noto Serif SC}
+  \setsansfont[AutoFakeBold=2.2]{Noto Serif SC}
+  \setCJKmainfont[AutoFakeBold=2.2]{Noto Serif SC}
+  \setCJKsansfont[AutoFakeBold=2.2]{Noto Serif SC}
+  \setCJKmonofont[AutoFakeBold=2.2]{Noto Serif SC}
+}{
+  \setmainfont[AutoFakeBold=2.2,AutoFakeSlant=0.18]{SimSun}
+  \setsansfont[AutoFakeBold=2.2]{SimSun}
+  \setCJKmainfont[AutoFakeBold=2.2]{SimSun}
+  \setCJKsansfont[AutoFakeBold=2.2]{SimSun}
+  \setCJKmonofont[AutoFakeBold=2.2]{SimSun}
+}
+
+\manualheader
+\headerrows{4}
+\name{张三}
+\cvtitle{}
+\portraitimage{}
+\leftinfo{英文署名}{San Zhang}
+\leftinfo{出生年月}{2000.01}
+\leftinfo{邮箱}{student@example.com}
+\leftinfo{电话}{(+86) 138-0000-0000}
+\rightinfo{目标岗位}{算法 / 仿真 / 研发}
+\rightinfo{研究领域}{智能装备状态监测}
+\rightinfo{单位}{示例大学智能工程学院}
+\rightinfo{学历}{博士研究生}
+
+\begin{document}
+\makecvheader
+
+\begin{rSection}{求职概述}
+面向智能装备、结构健康监测、仿真算法、工程研发与数据建模相关岗位。具备多源传感数据处理、结构状态评估、图像重构、代理模型和工程实验数据分析经验，能够从问题抽象、算法实现、实验验证到报告交付形成闭环。
+\end{rSection}
+
+\begin{rSection}{技能评价}
+\begin{itemize}
+\skillitem{编程与算法}{Python、MATLAB、C\#；具备 MATLAB 到 C\# 代码迁移经验；熟悉 BP 神经网络、物理约束代理模型、高斯插值、路径搜索、朴素贝叶斯分类、weighted-KNN、群智能优化算法。}
+\skillitem{建模与仿真}{围绕结构状态感知、装备性能预测和损伤重构开展建模、算法验证与结果分析。}
+\skillitem{工程软件}{CAD、SolidWorks、LS-DYNA、Altium Designer，可支持结构建模、力学仿真分析、PCB 绘制和工程结果整理。}
+\skillitem{实验与数据}{冲击动力学实验、红外热成像实验、超声传感网络相关实验；可处理序列图像、传感信号和仿真结果。}
+\skillitem{交付能力}{项目报告、PPT、演示动画、商业计划书、科研论文图表、会议汇报材料和技术文档。}
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{教育背景}
+\eduentry{博士}{示例大学}{智能工程学院}{机械工程}{2023.09--至今}
+\subdetail{论文题目：面向复杂装备的状态感知与性能评估方法研究。}
+\eduentry{本科}{示例大学}{工程学院}{飞行器设计与工程}{2019.09--2023.06}
+\subdetail{毕业设计：基于数据驱动模型的系统状态预测方法研究。}
+\end{rSection}
+
+\begin{rSection}{项目经历}
+\begin{enumerate}
+\projectentry{复杂装备在线感知与评估技术}{科研项目}{2023.10--2024.01}{分析传感信号传播路径，基于路径搜索理论实现可视化，优化感知算法和插值算法，并完成 MATLAB 到 C\# 的代码迁移。}
+\projectentry{复杂结构剩余性能预测方法研究}{校级科研训练项目}{2025.01--2027.12}{学生负责人，承担模型构建、算法开发、报告撰写与任务对接相关工作。}
+\projectentry{智能监测平台原型开发}{创新创业项目}{2024--2025}{团队核心成员，负责状态感知模块、指标体系与原型验证，参与商业计划书等关键材料撰写。}
+\projectentry{多传感器网络驱动的结构诊断方法}{开放课题}{2024.01--2025.12}{核心成员，负责数据预处理、算法验证和阶段汇报。}
+\projectentry{某工程装备监测任务}{企业联合项目}{2023.12--2026.12}{参与需求梳理、测试方案设计和技术文档整理。}
+\projectentry{某高可靠结构评估任务}{企业联合项目}{2025.01--2026.12}{参与实验设计、数据分析和结果复核。}
+\projectentry{基于红外图像的表面损伤定量重构方法}{重点实验室开放课题}{2024.01--2025.12}{负责图像处理流程设计、指标计算和结果可视化。}
+\projectentry{基于热成像的结构状态重构方法}{科研项目}{2024.07--2024.08}{协助红外热成像实验设计与实施，处理实验序列图像，利用平滑方法和分类算法实现定量重构。}
+\projectentry{超声传感网络驱动的结构检测方法}{科研项目}{2024.03--2024.08}{参与感知-防护-诊断一体化方案研制，承担背景调研、素材整理、PPT 与演示动画制作、报告编写。}
+\end{enumerate}
+\end{rSection}
+
+\begin{rSection}{论文与知识产权}
+\begin{cvgroup}{代表论文}
+\item \authorhl{San Zhang}, Si Li, Wu Wang, et al. Data-driven online assessment of structural state using multi-source measurements[J]. \journal{Journal of Example Engineering}, 2026: 100001. (\textit{SCI, JCR Q1 TOP, IF=8.0}).
+\item \authorhl{San Zhang}, Ming Chen, Wu Wang. Physics-informed residual performance assessment for protective structures[J]. \journal{Engineering Example Review}, 2026. (\textit{Major revision}).
+\item Si Li\#, \authorhl{San Zhang\#}（共同第一作者，署名第二）, Wu Wang, et al. Localization of impact-induced damage using a weighted learning algorithm[J]. \journal{Example Aerospace Letters}, 2025, 12(3): 101--118. (\textit{JCR Q2, IF=3.2}).
+\item Jia Zhao, Ming Chen, Han Feng, Wu Wang, \authorhl{San Zhang}, et al. Quantitative characterization of surface damage using infrared thermography[J]. \journal{Example Nondestructive Evaluation}, 2025, 40(9): 1000--1020. (\textit{SCI, JCR Q1, IF=4.0}).
+\item Wu Wang, Jia Zhao, Ming Chen, \authorhl{San Zhang}, et al. A hybrid optimization method for structural state localization[J]. \journal{Advances in Example Research}, 2026, 77(12): 2000--2020. (\textit{SCI, JCR Q2, IF=3.0}).
+\end{cvgroup}
+\begin{cvbullets}{软件著作权}
+\item 张三, 李四 等. 复杂装备状态感知与评估软件 V1.0, 2025SR000001, 排名 1, 2025.04.22.
+\item 赵六, 张三 等. 多源监测数据处理软件 V1.0, 2025SR000002, 排名 2, 2025.04.22.
+\item 赵六, 张三 等. 传感网络监测与诊断软件 V1.0, 2025SR000003, 排名 2, 2025.03.25.
+\end{cvbullets}
+\end{rSection}
+
+\begin{rSection}{奖励荣誉}
+\begin{cvbullets}{创新创业与科创成果}
+\item \textbf{示例大学研究生创新创业大赛一等奖}，排名第 1，2025.10；示例省大学生工程创新竞赛二等奖，排名第 2，2025.08。
+\item \textbf{示例工程创新挑战赛特等奖}，排名第 3，2024.12；示例地区博士生创新论坛优秀项目奖，排名第 4，2024.11。
+\item 示例大学科技作品竞赛金奖，排名第 4，2024.08；示例大学创业训练营优秀团队，排名第 5，2025.06；示例大学创新项目银奖，排名第 5，2025.07。
+\end{cvbullets}
+\begin{cvbullets}{学业与综合荣誉}
+\item 示例大学“优秀研究生”，2026.05；示例大学“优秀学生干部”，2024、2022。
+\item 示例大学研究生学术报告优秀奖，2023；研究生一等学业奖学金，2023；本科生优秀奖学金，2022；社会实践优秀个人，2021。
+\end{cvbullets}
+\end{rSection}
+
+\begin{rSection}{实践与综合经历}
+\begin{itemize}
+\item “智能听诊”项目获示例大学官方公众号专题报道，阅读量超过 1.0 万，并被多家平台转载。
+\item 2024--2025 连续两年参加“智汇示例”前沿科技成果展；2025.11 参与示例科普节目专题《智能监测技术入门》录制。
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{待补充 / 待确认}
+\begin{itemize}
+\item 个人主页 / Google Scholar / GitHub；更多学术会议完整信息；发明专利或实用新型专利信息；可能的新增软件著作权信息。
+\item 不同成果展或活动名称是否需要合并为同一条经历。
+\end{itemize}
+\end{rSection}
+
+\end{document}

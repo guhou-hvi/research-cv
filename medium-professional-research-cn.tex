@@ -1,0 +1,119 @@
+\documentclass[11pt]{resume}
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{hyperref}
+
+\defaultfontfeatures{Ligatures=TeX}
+\IfFontExistsTF{Noto Serif SC}{
+  \setmainfont[AutoFakeBold=2.2,AutoFakeSlant=0.18]{Noto Serif SC}
+  \setsansfont[AutoFakeBold=2.2]{Noto Serif SC}
+  \setCJKmainfont[AutoFakeBold=2.2]{Noto Serif SC}
+  \setCJKsansfont[AutoFakeBold=2.2]{Noto Serif SC}
+  \setCJKmonofont[AutoFakeBold=2.2]{Noto Serif SC}
+}{
+  \setmainfont[AutoFakeBold=2.2,AutoFakeSlant=0.18]{SimSun}
+  \setsansfont[AutoFakeBold=2.2]{SimSun}
+  \setCJKmainfont[AutoFakeBold=2.2]{SimSun}
+  \setCJKsansfont[AutoFakeBold=2.2]{SimSun}
+  \setCJKmonofont[AutoFakeBold=2.2]{SimSun}
+}
+
+\manualheader
+\headerrows{4}
+\name{张 三}
+\cvtitle{}
+\portraitimage{}
+
+\leftinfo{出生年月}{2000.01}
+\leftinfo{政治面貌}{群众}
+\leftinfo{导师}{导师姓名 教授}
+\leftinfo{课题}{智能装备状态监测}
+\rightinfo{籍贯}{示例省示例市}
+\rightinfo{单位}{示例大学智能工程学院}
+\rightinfo{联系电话}{(+86) 138-0000-0000}
+\rightinfo{电子邮箱}{student@example.com}
+
+\begin{document}
+\makecvheader
+
+\begin{rSection}{教育背景}
+\eduentry{博士}{示例大学}{智能工程学院}{机械工程}{2023.09--2027.06}
+\subdetail{论文题目：面向复杂装备的状态感知与性能评估方法研究}
+\eduentry{本科}{示例大学}{工程学院}{飞行器设计与工程}{2019.09--2023.06}
+\subdetail{毕业设计：基于数据驱动模型的系统状态预测方法研究}
+\end{rSection}
+
+\begin{rSection}{项目经历}
+\begin{enumerate}
+\projectentry{复杂装备多源感知与健康评估方法研究}{校级科研训练项目}{2025.01--2027.12}{学生负责人，承担模型构建、实验设计和论文撰写工作。}
+\projectentry{面向工程结构的在线监测与诊断算法开发}{实验室开放课题}{2024.03--2025.12}{核心成员，负责数据预处理、特征提取和算法验证。}
+\projectentry{高可靠结构性能退化评估平台}{企业联合课题}{2024.06--2026.06}{参与需求分析、原型开发和测试报告撰写。}
+\projectentry{多传感器信号融合与异常识别方法}{研究生创新项目}{2023.10--2025.05}{负责传感信号清洗、模型训练和可视化分析。}
+\projectentry{基于图像序列的损伤区域定量重构}{学院科研项目}{2023.09--2024.12}{参与实验方案设计、图像处理和结果复核。}
+\end{enumerate}
+\end{rSection}
+
+\begin{rSection}{学术论文发表}
+\begin{cvgroup}{第一作者}
+\item \authorhl{San Zhang}, Si Li, Wu Wang, et al. Data-driven online assessment of structural state using multi-source measurements[J]. \journal{Journal of Example Engineering}, 2026: 100001. (\textit{SCI, JCR Q1, IF=8.0}).
+\item Si Li\#, \authorhl{San Zhang\#}, Wu Wang, et al. Localization of impact-induced damage using a weighted learning algorithm[J]. \journal{Example Aerospace Letters}, 2025, 12(3): 101--118. (\textit{JCR Q2, IF=3.2}).
+\item \authorhl{San Zhang}, Ming Chen, Wu Wang. Physics-informed residual performance assessment for protective structures[J]. \journal{Engineering Example Review}, 2026. (\textit{Major revision}).
+\end{cvgroup}
+
+\begin{cvgroup}{共同作者}
+\item Jia Zhao, Ming Chen, Han Feng, Wu Wang, \authorhl{San Zhang}, et al. Quantitative characterization of surface damage using infrared thermography[J]. \journal{Example Nondestructive Evaluation}, 2025, 40(9): 1000--1020. (\textit{SCI, JCR Q1, IF=4.0}).
+\item Wu Wang, Jia Zhao, Ming Chen, \authorhl{San Zhang}, et al. A hybrid optimization method for structural state localization[J]. \journal{Advances in Example Research}, 2026, 77(12): 2000--2020. (\textit{SCI, JCR Q2, IF=3.0}).
+\end{cvgroup}
+\end{rSection}
+
+\begin{rSection}{学术会议}
+\begin{cvgroup}{口头报告}
+\item \authorhl{张三}, 李四, 王五, 等. 基于生成式模型的结构状态在线评估方法. 第十届示例工程科学学术会议, 2025.07, 示例市.
+\item \authorhl{张三}, 李四, 王五, 等. 面向复杂装备损伤识别的代理模型研究. 第六届示例地区博士生学术论坛, 2025.08, 示例市.
+\end{cvgroup}
+\end{rSection}
+
+\begin{rSection}{知识产权}
+\begin{cvbullets}{软件著作权}
+\item \authorhl{张三}, 李四, 等. 复杂装备状态感知与评估软件 V1.0, 2025SR000001, 排名 1, 2025.04.22.
+\item 李四, \authorhl{张三}, 等. 多源监测数据地面处理软件 V1.0, 2025SR000002, 排名 2, 2025.04.22.
+\item 李四, \authorhl{张三}, 等. 传感网络监测与诊断软件 V1.0, 2025SR000003, 排名 2, 2025.03.25.
+\end{cvbullets}
+\end{rSection}
+
+\begin{rSection}{奖励荣誉}
+\begin{cvbullets}{创新创业}
+\item 示例大学研究生创新创业大赛\textbf{一等奖}，排名第 1，2025.10。
+\item 示例省大学生工程创新竞赛二等奖，排名第 2，2024.12。
+\item 示例大学科技作品竞赛金奖，排名第 2，2025.08。
+\item 示例地区博士生创新论坛优秀项目奖，排名第 3，2024.11。
+\item 示例大学创业训练营优秀团队，排名第 4，2025.06。
+\end{cvbullets}
+\begin{cvbullets}{学业与荣誉}
+\item 示例大学研究生学术报告优秀奖，2023.01。
+\item 示例大学“优秀研究生”，2026.05；示例大学“优秀学生干部”，2024、2022。
+\item 研究生一等学业奖学金，2023；本科生优秀奖学金，2022；社会实践优秀个人，2021。
+\end{cvbullets}
+\end{rSection}
+
+\begin{rSection}{科创与实践经历}
+\begin{itemize}
+\item 示例科技开放日主题活动《工程科学与未来装备》，参与演示与讲解，2026.04。
+\item 高校创新创业成果展，示例大学专场，成果汇报，2025.12。
+\item 示例科普节目专题《智能监测技术入门》，参与素材整理与演示录制，2025.11。
+\item “智汇示例”前沿科技成果展，示例市，成果汇报，2024.09、2025.09。
+\item “智能听诊”项目获示例大学官方公众号专题报道，阅读量超过 1.0 万，并被多家平台转载。
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{技能评价}
+\begin{itemize}
+\skillitem{外语}{大学英语六级（CET-6），具备英文文献阅读、论文写作和学术汇报基础。}
+\skillitem{编程与算法}{Python、MATLAB、C\#、Origin。}
+\skillitem{仿真与软件}{CAD、SolidWorks、ANSYS LS-DYNA、LabView。}
+\skillitem{实验技能}{冲击动力学实验、红外热成像实验、超声传感监测网络与信号采集相关实验。}
+\end{itemize}
+\end{rSection}
+
+\end{document}
