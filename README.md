@@ -6,13 +6,26 @@
 
 - [研究版 PDF](medium-professional-research-cn.pdf)
 - [行业版 PDF](medium-professional-industry-cn.pdf)
+- `fig-template/`: 匿名格式参考图，用于展示模板复现目标和最终效果。
 
 ## Files
 
 - `medium-professional-research-cn.tex`: 中文研究型简历示例。
 - `medium-professional-industry-cn.tex`: 中文行业型简历示例。
 - `resume.cls`: 本模板使用的本地简历样式类。
+- `assets/id-photo.jpg`: 默认卡通头像占位图。
+- `fig-template/`: 脱敏后的格式参考图。
 - `LICENSE`: 开源许可证与上游模板署名说明。
+
+## Replace The Portrait
+
+两个模板默认引用：
+
+```tex
+\portraitimage{assets/id-photo.jpg}
+```
+
+使用时直接用自己的证件照或头像替换 `assets/id-photo.jpg`，保持文件名不变即可重新编译。也可以把命令参数改成其它相对路径。
 
 ## Build
 

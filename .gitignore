@@ -1,7 +1,5 @@
-# Local private assets and archived experiments
+# Local archived experiments
 /archive/
-/assets/
-/fig-template/
 /medium-professional-template.tex
 
 # LaTeX build artifacts
