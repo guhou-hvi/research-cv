@@ -25,6 +25,12 @@
 
 使用时直接用自己的证件照或头像替换 `assets/id-photo.jpg`，保持文件名不变即可重新编译。也可以把命令参数改成其它相对路径。
 
+## Customize With Vibe Coding
+
+这个模板也适合作为 vibe coding 的起点。你可以在现有结构上继续让 AI/Codex 帮你调整版式、字段、模块顺序、配色、头像尺寸、项目描述和不同岗位版本。把自己的需求直接描述出来，然后在生成结果中逐步微调即可。
+
+尽情享受 vibe coding！
+
 ## Build
 
 请使用 XeLaTeX 编译：
