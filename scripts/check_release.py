@@ -32,7 +32,10 @@ def check_pdf(path):
         assert "虚构示例" in text, "Missing fictional example footer"
         for email in re.findall(r"[\w.+-]+@[\w.-]+\.[A-Za-z]+", text):
             assert email.endswith("@example.com"), "Non-example email in PDF"
-        for annotation in page.get("/Annots", []):
+        annotations = page.get("/Annots", [])
+        if hasattr(annotations, "get_object"):
+            annotations = annotations.get_object()
+        for annotation in annotations:
             action = annotation.get_object().get("/A")
             if not action:
                 continue
