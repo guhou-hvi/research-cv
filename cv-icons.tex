@@ -1,0 +1,16 @@
+% Prefer the TeX package; use compact text labels on minimal installations.
+% No operating-system font lookup or missing-glyph suppression is required.
+\IfFileExists{fontawesome5.sty}{%
+  \RequirePackage{fontawesome5}
+}{%
+  \newcommand{\faEnvelope}{{\sffamily @}}
+  \newcommand{\faPhone}{{\sffamily T}}
+  \newcommand{\faGlobe}{{\sffamily W}}
+  \newcommand{\faGithub}{{\sffamily G}}
+  \newcommand{\faCode}{{\sffamily C}}
+  \newcommand{\faBookOpen}{{\sffamily P}}
+  \newcommand{\faGraduationCap}{{\sffamily S}}
+  \newcommand{\faLink}{{\sffamily L}}
+}
+\newcommand{\cvGoogleScholarIcon}{\faGraduationCap}
+\newcommand{\cvDoiIcon}{\faLink}

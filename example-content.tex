@@ -1,0 +1,62 @@
+% All projects, outcomes and dates below are fictional layout examples.
+\newcommand{\ExampleSkills}{%
+  \begin{itemize}
+    \skillitem{算法与建模}{使用 Python、PyTorch、NumPy 和 SciPy 开展模型实现；熟悉监督学习、误差分析与基线对照。}
+    \skillitem{科研智能体}{实现任务规划、结构化工具调用与状态记录；通过固定任务集检查工具输出和失败恢复。}
+    \skillitem{数据与计算}{使用 HDF5 存储计算结果，编写批量预处理与并行实验脚本；熟悉 Linux 和 Git 协作。}
+    \skillitem{工程验证}{为核心接口编写回归测试，记录环境、随机种子和参数；形成复现实验、性能报告与交付文档。}
+  \end{itemize}}
+\newcommand{\AssistantProject}{%
+  \begingroup
+  \renewcommand{\cvresearchcaselabelone}{架构设计}
+  \renewcommand{\cvresearchcaselabeltwo}{关键实现}
+  \renewcommand{\cvresearchcaselabelthree}{验证结果}
+  \researchcase{面向数值实验的工具调用助手}{独立实现｜任务规划、计算执行与结果检查}{2026.03--至今}
+    {将参数解析、求解器执行和结果核对拆分为独立步骤，使用结构化状态保存输入、工具响应与中间文件。}
+    {以 JSON Schema 校验工具参数；为计算任务设置超时和失败分类；支持按运行编号回放过程并导出实验摘要。}
+    {在 160 项虚构示例任务上演示评测流程，定位单位不一致、参数缺失等问题，形成可复用验证脚本。
+      \evidenceiconlink{\faGithub}{代码示例}{https://example.com/code/assistant}}
+  \endgroup}
+\newcommand{\WorkflowProject}{%
+  \begingroup
+  \renewcommand{\cvresearchcaselabelone}{实际问题}
+  \renewcommand{\cvresearchcaselabeltwo}{实现内容}
+  \renewcommand{\cvresearchcaselabelthree}{交付成果}
+  \researchcase{可复现计算与图表报告工作流}{主要开发｜实验配置、数据校验与批量绘图}{2025.10--2026.08}
+    {多个模型共享数据，但预处理、评测口径和绘图参数分散，导致结果难以比较，重复实验缺少完整记录。}
+    {统一配置入口、实验目录与指标计算；增加数据范围和数组形状检查，自动生成对照表与带参数记录的图表。}
+    {整理为 2 个示例工具，支持从配置到报告的批量运行；提供使用文档和最小复现实验。
+      \evidenceiconlink{\faCode}{工具示例}{https://example.com/code/workflow}}
+  \endgroup}
+\newcommand{\HeatProject}{%
+  \researchcase{热传导场的轻量代理模型}{校内研究课题示例｜数据生成与代理建模}{2025.09--2026.07}
+    {针对重复参数扫描中的求解成本，研究不同边界条件下的场预测方法，同时检查误差随空间位置的分布。}
+    {建立数值基线、生成训练样本并完成数据划分；比较卷积模型和低秩方法，开展样本规模与边界扰动实验。}
+    {形成 120 组虚构算例与一篇示例论文；保存训练配置、误差分布和复现步骤。
+      \evidenceiconlink{\faBookOpen}{论文示例}{https://example.com/papers/heat}}
+}
+\newcommand{\UncertaintyProject}{%
+  \researchcase{小样本仿真的误差与不确定性评估}{合作研究示例｜模型比较与结果分析}{2026.01--2026.09}
+    {训练数据有限时，单次测试误差不足以反映模型稳定性，需要比较不同采样方案及预测区间的覆盖情况。}
+    {构建重复划分和统一指标脚本；比较集成模型与传统回归方法，检查异常样本对结果的影响并记录失败案例。}
+    {完成 24 组虚构对照实验，输出误差表、覆盖率图与方法说明；为后续采样策略提供可检查的比较依据。}
+}
+\newcommand{\ExampleContributions}{%
+  \begin{itemize}
+    \cvactivity{\textbf{ExampleIO：文件读取与资源管理}\enspace 修复空输入和提前退出时的文件关闭行为，补充边界情况测试及接口说明。
+      \evidenceiconlink{\faGithub}{PR 示例}{https://example.com/contributions/io}}
+    \cvactivity{\textbf{ExampleMesh：网格数据接口}\enspace 检查顶点与单元索引，完善错误提示；用最小算例复现维度不一致问题。
+      \evidenceiconlink{\faGithub}{PR 示例}{https://example.com/contributions/mesh}}
+    \cvactivity{\textbf{ExampleConfig：配置序列化}\enspace 补充嵌套结构的往返测试，跟进维护者反馈，更新用户文档与变更说明。
+      \evidenceiconlink{\faGithub}{PR 示例}{https://example.com/contributions/config}}
+  \end{itemize}
+}
+\newcommand{\ExamplePractice}{%
+  \begin{itemize}
+    \cvactivity{\textbf{实验数据管理工具｜示例实验室}\enspace 负责数据导入、质量检查与结果导出，编写操作说明，协助完成验收与使用培训。}
+  \end{itemize}}
+\newcommand{\ExampleAwards}{%
+  \begin{itemize}
+    \cvactivity{示例研究生学术奖（2026）；示例校级创新项目优秀结题（2025）。}
+    \cvactivity{在示例计算研讨会作口头报告，维护实验说明、工具文档与公开示例代码。}
+  \end{itemize}}

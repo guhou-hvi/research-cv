@@ -1,0 +1,19 @@
+name: Build fictional examples
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install TeX and PDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends texlive-xetex texlive-lang-chinese texlive-fonts-recommended texlive-plain-generic tex-gyre fonts-texgyre poppler-utils poppler-data python3-pypdf
+      - name: Compile and check
+        run: |
+          /usr/bin/python3 scripts/build.py
+          /usr/bin/python3 scripts/check_release.py --pdf-dir build

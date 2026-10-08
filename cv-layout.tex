@@ -1,0 +1,72 @@
+% Shared layout rules established by the academic CV.
+\newlength{\cvdetailgap}
+\setlength{\cvdetailgap}{1.5pt}
+\newlength{\cvitemgap}
+\setlength{\cvitemgap}{2pt}
+\newlength{\cventrygap}
+\setlength{\cventrygap}{4pt}
+
+\setlength{\cvprojecttitlegap}{\cvdetailgap}
+\setlength{\cvcompactpaperdetailgap}{\cvdetailgap}
+\setlength{\cvcompactpaperitemgap}{\cventrygap}
+\let\cvresearchcaseitemgap\cventrygap
+\setlist[itemize]{leftmargin=1.35em,itemsep=\cvitemgap,topsep=2pt,parsep=0pt,partopsep=0pt,before={\setlength{\lineskip}{0pt}}}
+\setlist[enumerate]{leftmargin=2em,itemsep=\cventrygap,topsep=2pt,parsep=0pt,partopsep=0pt,before={\setlength{\lineskip}{0pt}}}
+\setlength{\cvheadernameraise}{4pt}
+\cvheaderseparatorfalse
+
+\newcommand{\cvrecord}[2]{%
+  \item \begin{minipage}[t]{\linewidth}
+  \strut\textbf{#1}\strut\par\vspace{\cvdetailgap}
+  {\footnotesize\textcolor{cvgray}{\strut #2\strut}\par}
+  \end{minipage}%
+}
+\newcommand{\cvactivity}[1]{%
+  \item \begin{minipage}[t]{\linewidth}\strut #1\strut\par\end{minipage}%
+}
+\newcommand{\cveducationbadge}[1]{%
+  \begingroup
+  \setlength{\fboxsep}{1.2pt}%
+  \smash{\colorbox{cvlight}{\textcolor{cvblue}{\bfseries\strut #1}}}%
+  \endgroup
+}
+\newcommand{\cveducationsep}{%
+  \hspace{0.35em}{\normalfont\textcolor{cvgray}{\textbar}}\hspace{0.35em}%
+}
+\newcommand{\cveducation}[6]{%
+  \par\noindent\begin{minipage}[t]{\linewidth}
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1}\cveducationsep\textbf{#2}\cveducationsep{\textcolor{cvgray}{#3}}\cveducationsep #4 &
+    {\footnotesize\textcolor{cvgray}{#5}}
+  \end{tabularx}\par\vspace{\cvdetailgap}
+  {\footnotesize\textcolor{cvgray}{\strut #6\strut}\par}
+  \end{minipage}\par
+}
+\newcommand{\cvprojectentry}[4]{%
+  \item \begin{minipage}[t]{\linewidth}
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1} & {\footnotesize\textcolor{cvgray}{#3}}
+  \end{tabularx}\par
+  \vspace{\cvprojecttitlegap}
+  \strut{\footnotesize\textcolor{cvblue}{#2}}\enspace #4\strut\par
+  \end{minipage}%
+}
+\let\projectentry\cvprojectentry
+\let\researchprojectentry\cvprojectentry
+
+% Opt-in boxes for recruiting variants; academic output stays unchanged.
+\let\cvunboxedcompactpaperentry\compactpaperentry
+\newcommand{\cvrecruitinglayout}{%
+  \renewcommand{\cvcompactpapermetaformat}{\raggedright}%
+  \renewcommand{\cvcompactpapermetaend}{\par}%
+  \renewcommand{\cvcompactpaperauthors}[1]{\mbox{\textcolor{cvgray}{##1}}}%
+  \renewcommand{\cvcompactpapermetasep}{\enspace\allowbreak}%
+  \renewcommand{\cvpaperjournalmetadata}[3]{\mbox{\journal{##1}, ##2\enspace ##3}}%
+  \renewcommand{\skillitem}[2]{\cvactivity{\textbf{##1}\enspace ##2}}%
+  \renewcommand{\compactpaperentry}[7]{%
+    \par\noindent\begin{minipage}[t]{\linewidth}
+      \setlength{\cvcompactpaperitemgap}{0pt}%
+      \cvunboxedcompactpaperentry{##1}{##2}{##3}{##4}{##5}{##6}{##7}%
+    \end{minipage}\par\vspace{\cventrygap}%
+  }%
+}

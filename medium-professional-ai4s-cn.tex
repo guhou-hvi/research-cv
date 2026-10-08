@@ -1,0 +1,52 @@
+\documentclass{resume}
+\input{cv-layout.tex}
+\input{profile-data.tex}
+\input{publications-data.tex}
+\input{example-content.tex}
+\cvrecruitinglayout
+\setlength{\cventrygap}{3pt}
+\setlength{\cvcompactpaperitemgap}{3pt}
+\manualheader
+\name{\CandidateName}
+\begin{document}
+\makeaiheader
+  {\UniversityName｜\SchoolName}
+  {AI for Science／科研智能体实习}
+  {\CandidateContacts}
+  {预计毕业 \ExpectedGraduation}
+  {\Availability}
+  {\contacticonlink{\cvGoogleScholarIcon}{论文主页：example.com/publications}{\ScholarURL}}
+  {\contacticonlink{\faGithub}{代码主页：example.com/code}{\CodeURL}\qquad
+   \contacticonlink{\faGlobe}{个人主页：example.com/portfolio}{\HomeURL}}
+  {}
+\begin{rSectionWithTags}{量化概览}{\cvtag{科学机器学习}\enspace\cvtag{数值方法}\enspace\cvtag{工具调用}\enspace\cvtag{可复现计算}}
+\ExampleStats
+\end{rSectionWithTags}
+\begin{rSection}{教育背景}
+\ExampleEducation
+\end{rSection}
+\begin{rSection}{技术栈与实践能力}
+\ExampleSkills
+\end{rSection}
+\begin{rSection}{AI4S 与 Agent 项目}
+\AssistantProject
+\WorkflowProject
+\end{rSection}
+\newpage
+\begin{rSectionWithTags}{开源社区贡献}{\cvtag{3 个虚构项目}}
+\ExampleContributions
+\end{rSectionWithTags}
+\begin{rSection}{科学机器学习研究}
+\HeatProject
+\UncertaintyProject
+\end{rSection}
+\begin{rSection}{工程实践}
+\ExamplePractice
+\end{rSection}
+\begin{rSection}{代表论文}
+\ExamplePublications
+\end{rSection}
+\begin{rSection}{成果与学术交流}
+\ExampleAwards
+\end{rSection}
+\end{document}

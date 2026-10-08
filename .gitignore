@@ -1,9 +1,13 @@
-# Local archived experiments
+# Local references and previous promotion work never belong to a release.
 /archive/
 /fig-template/
+/propagandize/
 /medium-professional-template.tex
-
-# LaTeX build artifacts
+# Personal font overrides and build artifacts.
+/cv-fonts.local.tex
+/build/
+/build-*/
+__pycache__/
 *.aux
 *.bbl
 *.bcf
@@ -16,7 +20,3 @@
 *.synctex.gz
 *.toc
 *.xdv
-
-# Keep anonymized preview PDFs tracked
-!medium-professional-research-cn.pdf
-!medium-professional-industry-cn.pdf

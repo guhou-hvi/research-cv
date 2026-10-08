@@ -1,0 +1,48 @@
+% Fictional sample values; none of these identify the maintainer.
+\newcommand{\CandidateName}{林知行}
+\newcommand{\CandidateEnglishName}{Zhixing Lin}
+\newcommand{\CandidateEmail}{zhixing.lin@example.com}
+\newcommand{\CandidateEmailURL}{mailto:zhixing.lin@example.com}
+\newcommand{\CandidatePhone}{000-0000-0000}
+\newcommand{\UniversityName}{示例理工大学}
+\newcommand{\SchoolName}{计算与工程学院}
+\newcommand{\DegreeName}{计算科学与技术}
+\newcommand{\ExpectedGraduation}{2030.06}
+\newcommand{\PortraitAsset}{assets/id-photo.jpg}
+\newcommand{\HomeURL}{https://example.com/portfolio}
+\newcommand{\CodeURL}{https://example.com/code}
+\newcommand{\ScholarURL}{https://example.com/publications}
+\newcommand{\SchoolBadge}{研究型高校}
+\newcommand{\Availability}{2027.03 起｜每周 4 天｜持续 4 个月}
+\newcommand{\FictionNotice}{虚构示例｜请替换为个人真实经历}
+\newcommand{\CandidateContacts}{%
+  \contacticonlink{\faEnvelope}{\CandidateEmail}{\CandidateEmailURL}\enspace ·\enspace
+  \textcolor{cvblue}{\faPhone\enspace\CandidatePhone}}
+\newcommand{\CandidateLinks}{%
+  \contacticonlink{\faGlobe}{个人主页}{\HomeURL}\enspace ·\enspace
+  \contacticonlink{\faGithub}{代码主页}{\CodeURL}}
+\newcommand{\PhotoHeader}[1]{%
+  \manualheader\name{\CandidateName}\cvtitle{#1}\portraitimage{\PortraitAsset}
+  \leftinfo{电子邮箱}{\contacticonlink{\faEnvelope}{\CandidateEmail}{\CandidateEmailURL}}
+  \leftinfo{联系电话}{\CandidatePhone}
+  \leftinfo{在线主页}{\CandidateLinks}
+  \rightinfo{当前单位}{\UniversityName}
+  \rightinfo{培养方向}{\DegreeName}
+  \rightinfo{预计毕业}{\ExpectedGraduation}}
+\newcommand{\ExampleEducation}{%
+  \cveducation{博士研究生}{\UniversityName\enspace\cveducationbadge{\SchoolBadge}}
+    {\SchoolName}{\DegreeName}{2025.09--\ExpectedGraduation}
+    {研究方向：科学机器学习、数值方法与可复现计算；导师：示例导师。}
+  \vspace{\cventrygap}
+  \cveducation{工学学士}{示例工程大学}{信息学院}{软件工程}{2021.09--2025.06}
+    {毕业设计：面向热传导计算的实验管理与可视化工具。}}
+\newcommand{\ExampleStats}{%
+  \noindent\cvstatcompact{3}{篇示例论文}\hfill
+  \cvstatcompact{2}{项示例科研工具}\hfill
+  \cvstatcompact{3}{个示例贡献项目}\hfill
+  \cvstatcompact{5}{项示例研究与实践}}
+\hypersetup{pdfauthor={Research CV contributors},
+  pdftitle={Research CV - Fictional Example},
+  pdfsubject={Fictional sample; replace all content before applying},
+  pdfkeywords={LaTeX, CV, fictional example}}
+\fancyfoot[L]{\textcolor{cvgray}{\scriptsize\FictionNotice}}
